@@ -33,8 +33,8 @@
 %bcond_with selinux
 %endif
 
-# LTTng-UST enabled on Fedora, RHEL 6+, and SLES 12
-%if 0%{?fedora} || 0%{?rhel} >= 6 || 0%{?suse_version} == 1315
+# LTTng-UST enabled on Fedora, RHEL 6+, and SLES 12+ and openSUSE TW
+%if 0%{?fedora} || 0%{?rhel} >= 6 || 0%{?suse_version} >= 1315
 %bcond_without lttng
 %endif
 

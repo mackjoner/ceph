@@ -3392,6 +3392,7 @@ void CInode::encode_cap_message(MClientCaps *m, Capability *cap)
   m->mtime = i->mtime;
   m->atime = i->atime;
   m->ctime = i->ctime;
+  dout(20) << "encode_cap_message m->change_attr=" << m->change_attr << " i->change_attr=" << i->change_attr << dendl;
   m->change_attr = i->change_attr;
   m->time_warp_seq = i->time_warp_seq;
 

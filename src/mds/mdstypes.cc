@@ -469,7 +469,6 @@ int inode_t::compare(const inode_t &other, bool *divergent) const
         truncate_size != other.truncate_size ||
         truncate_from != other.truncate_from ||
         truncate_pending != other.truncate_pending ||
-	change_attr != other.change_attr ||
         mtime != other.mtime ||
         atime != other.atime ||
         time_warp_seq != other.time_warp_seq ||
